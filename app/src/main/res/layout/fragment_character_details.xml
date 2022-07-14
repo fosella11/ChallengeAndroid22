@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="@dimen/_3dp"
+        android:layout_margin="@dimen/_32dp"
+        android:elevation="@dimen/_3dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_16dp">
+
+            <ImageView
+                android:id="@+id/ivDetailsImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/tvDetailsNameTitle"
+                style="@style/TextAppearance.MaterialComponents.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:text="@string/fragment_character_details_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivDetailsImage"
+                tools:text="@string/fragment_character_details_name" />
+
+            <TextView
+                android:id="@+id/tvDetailsName"
+                style="@style/TextAppearance.MaterialComponents.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8dp"
+                android:gravity="center"
+                android:text="@string/fragment_character_details_name"
+                app:layout_constraintEnd_toEndOf="@+id/tvDetailsNameTitle"
+                app:layout_constraintStart_toStartOf="@+id/tvDetailsNameTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvDetailsNameTitle"
+                tools:text="@string/fragment_character_details_name" />
+
+            <TextView
+                android:id="@+id/tvDetailsStatusTitle"
+                style="@style/TextAppearance.MaterialComponents.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:text="@string/fragment_character_details_status"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDetailsName"
+                tools:text="@string/fragment_character_details_status" />
+
+            <TextView
+                android:id="@+id/tvDetailsStatus"
+                style="@style/TextAppearance.MaterialComponents.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8dp"
+                app:layout_constraintEnd_toEndOf="@+id/tvDetailsStatusTitle"
+                app:layout_constraintStart_toStartOf="@+id/tvDetailsStatusTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvDetailsStatusTitle"
+                tools:text="@string/fragment_character_details_status" />
+
+            <TextView
+                android:id="@+id/tvDetailsSpeciesTitle"
+                style="@style/TextAppearance.MaterialComponents.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:text="@string/fragment_character_details_species"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDetailsStatus"
+                tools:text="@string/fragment_character_details_species" />
+
+            <TextView
+                android:id="@+id/tvDetailsSpecies"
+                style="@style/TextAppearance.MaterialComponents.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8dp"
+                app:layout_constraintEnd_toEndOf="@+id/tvDetailsSpeciesTitle"
+                app:layout_constraintStart_toStartOf="@+id/tvDetailsSpeciesTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvDetailsSpeciesTitle"
+                tools:text="@string/fragment_character_details_species" />
+
+            <TextView
+                android:id="@+id/tvDetailsGenderTitle"
+                style="@style/TextAppearance.MaterialComponents.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:text="@string/fragment_character_details_gender"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDetailsSpecies"
+                tools:text="@string/fragment_character_details_gender" />
+
+            <TextView
+                android:id="@+id/tvDetailsGender"
+                style="@style/TextAppearance.MaterialComponents.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8dp"
+                app:layout_constraintEnd_toEndOf="@+id/tvDetailsGenderTitle"
+                app:layout_constraintStart_toStartOf="@+id/tvDetailsGenderTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvDetailsGenderTitle"
+                tools:text="@string/fragment_character_details_gender" />
+
+            <TextView
+                android:id="@+id/tvDetailsOrigenTitle"
+                style="@style/TextAppearance.MaterialComponents.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:text="@string/fragment_character_details_origin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDetailsGender"
+                tools:text="@string/fragment_character_details_origin" />
+
+            <TextView
+                android:id="@+id/tvDetailsOrigin"
+                style="@style/TextAppearance.MaterialComponents.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8dp"
+                app:layout_constraintEnd_toEndOf="@+id/tvDetailsOrigenTitle"
+                app:layout_constraintStart_toStartOf="@+id/tvDetailsOrigenTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvDetailsOrigenTitle"
+                tools:text="@string/fragment_character_details_origin" />
+
+            <TextView
+                android:id="@+id/tvDetailslocationTitle"
+                style="@style/TextAppearance.MaterialComponents.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:text="@string/fragment_character_details_location"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDetailsOrigin"
+                tools:text="@string/fragment_character_details_location" />
+
+            <TextView
+                android:id="@+id/tvDetailsLocation"
+                style="@style/TextAppearance.MaterialComponents.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8dp"
+                app:layout_constraintEnd_toEndOf="@+id/tvDetailslocationTitle"
+                app:layout_constraintStart_toStartOf="@+id/tvDetailslocationTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvDetailslocationTitle"
+                tools:text="@string/fragment_character_details_location" />
+
+            <TextView
+                android:id="@+id/tvDetailsEpidodesTitle"
+                style="@style/TextAppearance.MaterialComponents.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:text="@string/fragment_character_details_episodes"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDetailsLocation"
+                tools:text="@string/fragment_character_details_episodes" />
+
+            <TextView
+                android:id="@+id/tvDetailsEpisodes"
+                style="@style/TextAppearance.MaterialComponents.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8dp"
+                app:layout_constraintEnd_toEndOf="@+id/tvDetailsEpidodesTitle"
+                app:layout_constraintStart_toStartOf="@+id/tvDetailsEpidodesTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvDetailsEpidodesTitle"
+                tools:text="@string/fragment_character_details_episodes" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.core.widget.NestedScrollView>

@@ -1,5 +1,13 @@
 <resources>
     <string name="app_name">ChallengeAndroid</string>
+    <string name="item_layout_result_name">Nombre</string>
+    <string name="fragment_character_details_name">Name</string>
+    <string name="fragment_character_details_status">Status</string>
+    <string name="fragment_character_details_species">Species</string>
+    <string name="fragment_character_details_gender">Gender</string>
+    <string name="fragment_character_details_origin">Origin</string>
+    <string name="fragment_character_details_location">Location</string>
+    <string name="fragment_character_details_episodes">Number of episodes</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

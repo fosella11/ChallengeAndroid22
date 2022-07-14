@@ -1,13 +1,12 @@
 package com.caxstudio.challengeandroid.di
 
-import com.caxstudio.challengeandroid.data.repository.EpisodeRepository
-import com.caxstudio.challengeandroid.data.repository.EpisodeRepositoryImp
+import com.caxstudio.challengeandroid.data.repository.CharacterRepository
+import com.caxstudio.challengeandroid.data.repository.CharacterRepositoryImp
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
-
 
 /**
  * DataSource with Hilt
@@ -21,5 +20,5 @@ abstract class RepositoryModule {
     // pero del tipo EpisodesRepository (Inversion de dependencia)
     @Binds
     @Singleton
-    abstract fun episodesRepository(repositoryImp: EpisodeRepositoryImp): EpisodeRepository
+    abstract fun charactersRepository(repositoryImp: CharacterRepositoryImp): CharacterRepository
 }
