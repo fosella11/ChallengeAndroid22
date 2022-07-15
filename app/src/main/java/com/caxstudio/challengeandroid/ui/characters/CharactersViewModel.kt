@@ -36,9 +36,9 @@ class CharactersViewModel @Inject constructor(
 
     fun logOut() {
         viewModelScope.launch {
-            characterRepository.logout {
+            /*characterRepository.logout {
                 _logOut.value = true
-            }
+            }*/
 
         }
     }
