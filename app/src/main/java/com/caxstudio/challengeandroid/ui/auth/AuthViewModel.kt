@@ -4,14 +4,14 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.caxstudio.challengeandroid.data.model.auth.User
-import com.caxstudio.challengeandroid.data.repository.CharacterRepository
+import com.caxstudio.challengeandroid.data.repository.AuthRepository
 import com.caxstudio.challengeandroid.utils.UiProgress
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
 @HiltViewModel
 class AuthViewModel @Inject constructor(
-    private val repository: CharacterRepository
+    private val repository: AuthRepository
 ) : ViewModel() {
 
     private val _registerUser = MutableLiveData<UiProgress<String>>()
