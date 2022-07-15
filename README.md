@@ -55,6 +55,20 @@ puedan ver el código (y compilarlo si quieren).
 
 [Conventions code](https://kotlinlang.org/docs/coding-conventions.html#documentation-comments) 
 
+### Comments
+Utilizado : MVVM, Dagger hilt, Coroutines, Retrofit, Google Play Services, Glide 
+(Firebase, Firestore, Firebase-analytics).
+Pruebas unitarias
+
+Pendiente :
+Modularizar
+Agregar Paging library
+Agregar Test de Instrumentacion
+Completar la covertura de Tests
+Mejorar Comentarios en el codigo
+
+- Agregar 
+
 
 ## User to test 
  email: test@test.com

@@ -1,24 +1,34 @@
 package com.caxstudio.challengeandroid
 
-import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
-
-import org.junit.Test
+import dagger.hilt.android.testing.HiltAndroidRule
+import dagger.hilt.android.testing.HiltAndroidTest
+import org.junit.Rule
 import org.junit.runner.RunWith
 
-import org.junit.Assert.*
 
-/**
- * Instrumented test, which will execute on an Android device.
- *
- * See [testing documentation](http://d.android.com/tools/testing).
- */
+@HiltAndroidTest
 @RunWith(AndroidJUnit4::class)
 class ExampleInstrumentedTest {
+
+    @get:Rule(order = 1)
+    var hiltTestRule = HiltAndroidRule(this)
+
+    /*@Rule
+    var activityRule: ActivityTestRule<MainActivity> = ActivityTestRule(
+        MainActivity::class.java,
+        true,
+        true
+    )
+
     @Test
-    fun useAppContext() {
-        // Context of the app under test.
-        val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.caxstudio.challengeandroid", appContext.packageName)
-    }
+    fun testRecyclerVisible() {
+        Espresso.onView(ViewMatchers.withId(R.id.recycler_view))
+            .inRoot(
+                RootMatchers.withDecorView(
+                    Matchers.`is`(activityRule.getActivity().getWindow().getDecorView())
+                )
+            )
+            .check(matches(isDisplayed()))
+    }*/
 }
