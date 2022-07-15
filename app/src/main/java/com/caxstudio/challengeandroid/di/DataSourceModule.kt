@@ -2,7 +2,7 @@ package com.caxstudio.challengeandroid.di
 
 import com.caxstudio.challengeandroid.BuildConfig
 import com.caxstudio.challengeandroid.data.ApiService
-import com.caxstudio.challengeandroid.utils.URL_BASE
+import com.caxstudio.challengeandroid.utils.ConstantsApp
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -26,7 +26,7 @@ class DataSourceModule {
     @Singleton
     @Provides
     @Named("BaseURL")
-    fun provideApiServiceBaseUrl() = URL_BASE
+    fun provideApiServiceBaseUrl() = ConstantsApp.URL_BASE
 
     private fun okHttpClient(): OkHttpClient.Builder {
         val okHttpClient = OkHttpClient.Builder()
@@ -60,4 +60,5 @@ class DataSourceModule {
     @Provides
     fun restAPIServiceDataSource(retrofit: Retrofit): ApiService =
         retrofit.create(ApiService::class.java)
+
 }

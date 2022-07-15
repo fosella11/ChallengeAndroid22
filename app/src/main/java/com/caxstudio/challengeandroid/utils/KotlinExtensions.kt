@@ -11,3 +11,7 @@ fun View.hide() {
 fun View.show() {
     visibility = View.VISIBLE
 }
+
+fun Fragment.toast(msg: String?) {
+    Toast.makeText(requireContext(), msg, Toast.LENGTH_SHORT).show()
+}

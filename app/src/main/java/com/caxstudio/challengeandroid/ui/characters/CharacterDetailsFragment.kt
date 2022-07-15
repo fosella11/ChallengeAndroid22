@@ -1,16 +1,18 @@
 package com.caxstudio.challengeandroid.ui.characters
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.caxstudio.challengeandroid.data.model.character.Result
 import com.caxstudio.challengeandroid.databinding.FragmentCharacterDetailsBinding
 import com.caxstudio.challengeandroid.di.GlideApp
+import dagger.hilt.android.AndroidEntryPoint
 
 private const val ARG_PARAM_CHARACTER = "character"
 
+@AndroidEntryPoint
 class CharacterDetailsFragment : Fragment() {
 
     var resultData: Result? = null
@@ -20,11 +22,11 @@ class CharacterDetailsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        if (this::binding.isInitialized) {
-            return binding.root
+        return if (this::binding.isInitialized) {
+            binding.root
         } else {
             binding = FragmentCharacterDetailsBinding.inflate(layoutInflater)
-            return binding.root
+            binding.root
         }
     }
 

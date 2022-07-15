@@ -20,6 +20,10 @@ class CharactersViewModel @Inject constructor(
     val results: LiveData<UiProgress<List<Result>>>
         get() = _result
 
+    private val _logOut = MutableLiveData<Boolean>()
+    val logOut: LiveData<Boolean>
+        get() = _logOut
+
     // To show loading in requests
     // private - Only the class can modify
     fun getCharacters() {
@@ -28,5 +32,14 @@ class CharactersViewModel @Inject constructor(
             characterRepository.getCharacters { _result.value = it }
         }
 
+    }
+
+    fun logOut() {
+        viewModelScope.launch {
+            characterRepository.logout {
+                _logOut.value = true
+            }
+
+        }
     }
 }
