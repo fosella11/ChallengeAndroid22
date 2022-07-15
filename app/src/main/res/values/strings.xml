@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">ChallengeAndroid</string>
+    <string name="item_layout_result_name">Nombre</string>
+    <string name="fragment_character_logout">Log Out</string>
+    <string name="fragment_character_details_name">Name</string>
+    <string name="fragment_character_details_status">Status</string>
+    <string name="fragment_character_details_species">Species</string>
+    <string name="fragment_character_details_gender">Gender</string>
+    <string name="fragment_character_details_origin">Origin</string>
+    <string name="fragment_character_details_location">Location</string>
+    <string name="fragment_character_details_episodes">Number of episodes</string>
+    <string name="fragment_login_email_hint">juan@email.com</string>
+    <string name="fragment_login_pass_hint">Password</string>
+    <string name="fragment_login_title">Rick And Morty - Login</string>
+    <string name="fragment_login_button_name">Login</string>
+    <string name="fragment_login_create_account">Create account Rick And Morty</string>
+    <string name="fragment_register_email_hint">juan@email.com</string>
+    <string name="fragment_register_pass_hint">Password</string>
+    <string name="fragment_register_title">Rick And Morty - Register</string>
+    <string name="fragment_register_button_name">Create Account</string>
+    <string name="fragment_">Ingresar Pass</string>
+    <string name="fragment_must_email">You must enter email</string>
+    <string name="fragment_must_epass">You must enter password</string>
+    <string name="fragment_error_login">Error Login</string>
+    <string name="fragment_error_create_account">Create Account Error</string>
 </resources>

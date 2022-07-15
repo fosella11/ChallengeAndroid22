@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image">50dp</dimen>
+    <dimen name="image_detail">200dp</dimen>
+    <dimen name="_0dp">0dp</dimen>
+    <dimen name="_3dp">3dp</dimen>
+    <dimen name="_8dp">8dp</dimen>
+    <dimen name="_16dp">16dp</dimen>
+    <dimen name="_32dp">32dp</dimen>
+    <dimen name="_16sp">16sp</dimen>
+    <dimen name="_30sp">30sp</dimen>
+</resources>

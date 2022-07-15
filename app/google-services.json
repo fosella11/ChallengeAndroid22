@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "9856506944",
+    "project_id": "challengeandroid-dfbf7",
+    "storage_bucket": "challengeandroid-dfbf7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9856506944:android:060451ea5808133224d3a5",
+        "android_client_info": {
+          "package_name": "com.caxstudio.challengeandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "9856506944-641vo3itfhnqo10jpf4mdsoj1hpfb6ue.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8TmjC95Ke72Kw7ba4vDhk7BPGRKbeC_4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "9856506944-641vo3itfhnqo10jpf4mdsoj1hpfb6ue.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
