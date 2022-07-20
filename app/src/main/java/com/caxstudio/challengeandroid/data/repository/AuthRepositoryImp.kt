@@ -14,7 +14,6 @@ import com.google.gson.Gson
 import javax.inject.Inject
 
 class AuthRepositoryImp @Inject constructor(
-    private val apiServiceDataSource: ApiService,
     private val auth: FirebaseAuth,
     private val database: FirebaseFirestore,
     private val appPreferences: SharedPreferences,
