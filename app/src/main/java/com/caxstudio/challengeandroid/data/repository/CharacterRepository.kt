@@ -6,4 +6,3 @@ import com.caxstudio.challengeandroid.utils.UiProgress
 interface CharacterRepository {
     suspend fun getCharacters(result: (UiProgress<List<Result>>) -> Unit)
 }
-
