@@ -1,8 +1,8 @@
 package com.caxstudio.challengeandroid
 
 import android.arch.core.executor.testing.InstantTaskExecutorRule
-import com.caxstudio.challengeandroid.data.ApiService
-import com.caxstudio.challengeandroid.data.model.character.Result
+import com.caxstudio.challengeandroid.data.ApiEndPoint
+import com.caxstudio.challengeandroid.data.model.dto.ResultDTO
 import com.caxstudio.challengeandroid.data.repository.CharacterRepositoryImp
 import com.caxstudio.challengeandroid.utils.UiProgress
 import kotlinx.coroutines.runBlocking
@@ -42,7 +42,7 @@ class CharacterRepositoryTest {
         .client(OkHttpClient.Builder().build())
         .addConverterFactory(GsonConverterFactory.create())
         .build()
-        .create(ApiService::class.java)
+        .create(ApiEndPoint::class.java)
 
     //Todas las tareas suspend (Background) se ejecutan al arrancar
     @get:Rule
@@ -62,7 +62,7 @@ class CharacterRepositoryTest {
             }
         }
         runBlocking {
-            var results: List<Result> = emptyList()
+            var results: List<ResultDTO> = emptyList()
             characterRepository.getCharacters { progress ->
                 results = when (progress) {
                     is UiProgress.Success -> progress.data

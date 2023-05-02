@@ -73,3 +73,58 @@ Mejorar Comentarios en el codigo
 ## User to test 
  email: test@test.com
  password: test1234
+ 
+## Either example
+
+`Either` is a data type used in functional programming that represents a value that can be one of 
+two possible types: a successful result or a failure result. It is often used to represent the 
+result of a computation that may fail.
+
+In Kotlin, the `Either` type is provided by the Arrow library. An `Either` value can be created 
+using the `Either.Left` or `Either.Right` functions. The `Left` function creates an `Either` value 
+that represents a failure, while the `Right` function creates an `Either` value that represents 
+a successful result.
+
+For example, here's how to create an `Either` value that represents either a 
+successful result or a failure:
+
+```kotlin
+fun divide(a: Int, b: Int): Either<String, Int> {
+    return if (b == 0) {
+        Either.Left("Cannot divide by zero")
+    } else {
+        Either.Right(a / b)
+    }
+}
+```
+
+## What is functional programming with Arrow?
+
+Arrow is a Kotlin library that provides tools for implementing functional programming in code. 
+Functional programming is a programming paradigm that focuses on composing pure 
+functions to create programs.
+
+In functional programming, a function is considered pure if it returns the same result 
+given the same set of inputs, without side effects on the program state or the outside world. 
+Furthermore, pure functions are composable, meaning that they can be combined to form 
+larger functions.
+
+Arrow offers several tools to help implement functional programming in Kotlin, such as:
+
+- Immutable data types: Arrow provides immutable data types, such as 
+`Option`, `Either`, `Try`, `Validated`, `IO`, `Task`, among others, 
+that are used to work with values that may or may not be present, or to 
+represent successful results or errors.
+- Higher-order functions: Arrow provides higher-order functions such as 
+`map`, `flatMap`, `fold`, `reduce`, among others, that allow working with immutable data 
+structures and composing functions more easily and efficiently.
+- Controlled side effects: Arrow provides data types that allow controlling side effects, 
+such as `IO`, `Task`, among others, that allow handling operations that perform actions 
+in the outside world in a safe and controlled way.
+- Data validation: Arrow provides tools for validating data and making validations more 
+explicit and declarative.
+- Parallel processing: Arrow provides tools for handling parallel processing, such as 
+`parMap`, `parTraverse`, `sequence`, among others, that allow improving performance in 
+applications that handle large amounts of data.
+
+
